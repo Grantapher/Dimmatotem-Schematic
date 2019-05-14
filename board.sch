@@ -15797,10 +15797,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="FUNCTION_ROTARY" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="ENCODER-SWITCH" device="" package3d_urn="urn:adsk.eagle:package:40158/1"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-4" package3d_urn="urn:adsk.eagle:package:23347/1" value="0.1uF, 25V"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-4" package3d_urn="urn:adsk.eagle:package:23347/1" value="0.1uF, 25V"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-4" package3d_urn="urn:adsk.eagle:package:23347/1" value="0.1uF, 25V"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-4" package3d_urn="urn:adsk.eagle:package:23347/1" value="0.1uF, 25V"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="47uF, 25V"/>
 <part name="R4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:6240602/1" value="330"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -15853,22 +15849,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </instance>
 <instance part="GND7" gate="1" x="-10.16" y="132.08" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-12.7" y="134.62" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="C1" gate="G$1" x="-22.86" y="129.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="-23.876" y="128.905" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-23.876" y="133.731" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C3" gate="G$1" x="-15.24" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="-16.256" y="121.285" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-16.256" y="126.111" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C4" gate="G$1" x="-22.86" y="101.6" smashed="yes">
-<attribute name="NAME" x="-21.844" y="102.235" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-21.844" y="97.409" size="1.778" layer="96"/>
-</instance>
-<instance part="C6" gate="G$1" x="-17.78" y="93.98" smashed="yes">
-<attribute name="NAME" x="-16.764" y="94.615" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-16.764" y="89.789" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="G$1" x="-12.7" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="-13.716" y="47.625" size="1.778" layer="95" rot="R180"/>
@@ -15947,11 +15927,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="0" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="86.36" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="-"/>
-<wire x1="-17.78" y1="86.36" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="0" y1="81.28" x2="0" y2="86.36" width="0.1524" layer="91"/>
 <junction x="0" y="86.36"/>
+<pinref part="THRESHOLD_ROTARY" gate="G$1" pin="B"/>
+<wire x1="-17.78" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="86.36" x2="-17.78" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15963,63 +15944,51 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="25.4" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$13" class="0">
 <segment>
+<pinref part="FUNCTION_ROTARY" gate="G$1" pin="A"/>
+<wire x1="-7.62" y1="137.16" x2="-22.86" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO_LIGHTS" gate="G$1" pin="D7/AIN1"/>
 <wire x1="15.24" y1="116.84" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="-22.86" y1="127" x2="-22.86" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="-22.86" y1="121.92" x2="-22.86" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="121.92" x2="-22.86" y2="121.92" width="0.1524" layer="91"/>
 <junction x="-22.86" y="121.92"/>
+<wire x1="-22.86" y1="137.16" x2="-22.86" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="N$14" class="0">
 <segment>
+<pinref part="FUNCTION_ROTARY" gate="G$1" pin="B"/>
+<wire x1="-15.24" y1="127" x2="-7.62" y2="127" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="119.38" x2="-12.7" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO_LIGHTS" gate="G$1" pin="D6/AIN0"/>
 <wire x1="-12.7" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="119.38" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="+"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-27.94" y1="99.06" x2="-27.94" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="111.76" x2="-12.7" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="111.76" x2="-12.7" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-12.7" y="119.38"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="FUNCTION_ROTARY" gate="G$1" pin="A"/>
-<wire x1="-7.62" y1="137.16" x2="-22.86" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="-22.86" y1="137.16" x2="-22.86" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="C3" gate="G$1" pin="-"/>
-<pinref part="FUNCTION_ROTARY" gate="G$1" pin="B"/>
-<wire x1="-15.24" y1="127" x2="-7.62" y2="127" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="127" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="THRESHOLD_ROTARY" gate="G$1" pin="A"/>
-<pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="-7.62" y1="106.68" x2="-22.86" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="106.68" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="+"/>
-<pinref part="THRESHOLD_ROTARY" gate="G$1" pin="B"/>
-<wire x1="-17.78" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO_LIGHTS" gate="G$1" pin="D10/OC1B/!SS"/>
+<wire x1="35.56" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="106.68" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="83.82" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="83.82" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="83.82" x2="-22.86" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-12.7" y="83.82"/>
 </segment>
 </net>
 <net name="LED_OUT" class="0">
@@ -16163,13 +16132,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="MIC_VCC" class="0">
 <segment>
-<pinref part="ARDUINO_NANO_SOUND" gate="G$1" pin="SCK/D13"/>
-<wire x1="53.34" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="40.64" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="MIC" gate="G$1" pin="VDD"/>
 <wire x1="63.5" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO_SOUND" gate="G$1" pin="3V3"/>
-<wire x1="53.34" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO_SOUND" gate="G$1" pin="AREF"/>
+<wire x1="55.88" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="43.18" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 <junction x="55.88" y="43.18"/>
 </segment>
 </net>
@@ -16178,20 +16147,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="MIC" gate="G$1" pin="OUT"/>
 <pinref part="ARDUINO_NANO_SOUND" gate="G$1" pin="ADC0/A0"/>
 <wire x1="63.5" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="ARDUINO_NANO_LIGHTS" gate="G$1" pin="D10/OC1B/!SS"/>
-<wire x1="35.56" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="106.68" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="83.82" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="83.82" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="-"/>
-<wire x1="-12.7" y1="83.82" x2="-22.86" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="83.82" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-12.7" y="83.82"/>
 </segment>
 </net>
 </nets>

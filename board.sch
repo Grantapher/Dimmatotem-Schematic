@@ -11656,20 +11656,12 @@ CONN_03
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:6240602/1" value="10K"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="LED_OUT" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
 <part name="MIC" library="toepferg" deviceset="ADAFRUIT_ELECTRET_MIC_MAX9817" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:6240602/1" value="10K"/>
-<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:6240602/1" value="10K"/>
-<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:6240602/1" value="10K"/>
-<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="CPOL-US" device="E2-5" package3d_urn="urn:adsk.eagle:package:6240496/1" value="47uF 25V"/>
@@ -11720,10 +11712,6 @@ CONN_03
 <instance part="GND15" gate="1" x="-17.78" y="152.4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-15.24" y="154.94" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R7" gate="G$1" x="-30.48" y="137.16" smashed="yes">
-<attribute name="NAME" x="-34.29" y="138.6586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-34.29" y="133.858" size="1.778" layer="96"/>
-</instance>
 <instance part="P+4" gate="1" x="-17.78" y="144.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-15.24" y="142.24" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -11743,30 +11731,6 @@ CONN_03
 </instance>
 <instance part="GND16" gate="1" x="60.96" y="38.1" smashed="yes">
 <attribute name="VALUE" x="58.42" y="35.56" size="1.778" layer="96"/>
-</instance>
-<instance part="P+1" gate="1" x="-43.18" y="137.16" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-38.1" y="134.62" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R1" gate="G$1" x="-25.4" y="127" smashed="yes">
-<attribute name="NAME" x="-29.21" y="128.4986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-29.21" y="123.698" size="1.778" layer="96"/>
-</instance>
-<instance part="P+7" gate="1" x="-38.1" y="127" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-33.02" y="124.46" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R2" gate="G$1" x="-33.02" y="106.68" smashed="yes">
-<attribute name="NAME" x="-36.83" y="108.1786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-36.83" y="103.378" size="1.778" layer="96"/>
-</instance>
-<instance part="P+8" gate="1" x="-45.72" y="106.68" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-40.64" y="104.14" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R3" gate="G$1" x="-27.94" y="96.52" smashed="yes">
-<attribute name="NAME" x="-31.75" y="98.0186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-31.75" y="93.218" size="1.778" layer="96"/>
-</instance>
-<instance part="P+9" gate="1" x="-40.64" y="96.52" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-35.56" y="93.98" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+2" gate="1" x="-27.94" y="76.2" smashed="yes">
 <attribute name="VALUE" x="-30.48" y="71.12" size="1.778" layer="96" rot="R90"/>
@@ -11791,9 +11755,6 @@ CONN_03
 <pinref part="THRESHOLD_ROTARY" gate="G$1" pin="B"/>
 <wire x1="-17.78" y1="96.52" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="86.36" x2="-17.78" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="96.52" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-17.78" y="96.52"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -11814,9 +11775,6 @@ CONN_03
 <wire x1="12.7" y1="116.84" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="137.16" x2="-17.78" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="137.16" x2="-25.4" y2="137.16" width="0.1524" layer="91"/>
-<junction x="-17.78" y="137.16"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -11828,9 +11786,6 @@ CONN_03
 <wire x1="33.02" y1="106.68" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="83.82" x2="-20.32" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="83.82" x2="-20.32" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="106.68" x2="-27.94" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-20.32" y="106.68"/>
 </segment>
 </net>
 <net name="LED_OUT" class="0">
@@ -11884,26 +11839,6 @@ CONN_03
 <pinref part="LED_OUT" gate="J$1" pin="1"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="-22.86" y1="144.78" x2="-20.32" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="-35.56" y1="137.16" x2="-40.64" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="-30.48" y1="127" x2="-35.56" y2="127" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="-38.1" y1="106.68" x2="-43.18" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="-33.02" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="+"/>
@@ -11984,8 +11919,6 @@ CONN_03
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91"/>
 <pinref part="FUNCTION_ROTARY" gate="G$1" pin="B"/>
 <wire x1="-15.24" y1="127" x2="-7.62" y2="127" width="0.1524" layer="91"/>
 <pinref part="ARDUINO_NANO_LIGHTS" gate="G$1" pin="D6/AIN0"/>
@@ -11993,12 +11926,29 @@ CONN_03
 <wire x1="17.78" y1="119.38" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="127" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
-<junction x="-15.24" y="127"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,-5.08,71.12,ARDUINO_NANO_SOUND,!RESET,,,,"/>
+<approved hash="204,1,35.56,68.58,ARDUINO_NANO_SOUND,5V,,,,"/>
+<approved hash="202,1,35.56,71.12,ARDUINO_NANO_SOUND,!RESET,,,,"/>
+<approved hash="104,1,35.56,76.2,ARDUINO_NANO_SOUND,VIN,+5V,,,"/>
+<approved hash="202,1,35.56,132.08,ARDUINO_NANO_LIGHTS,!RESET,,,,"/>
+<approved hash="202,1,76.2,106.68,ARDUINO_NANO_LIGHTS,AREF,,,,"/>
+<approved hash="204,1,76.2,129.54,ARDUINO_NANO_LIGHTS,5V,,,,"/>
+<approved hash="202,1,76.2,132.08,ARDUINO_NANO_LIGHTS,!RESET,,,,"/>
+<approved hash="104,1,76.2,137.16,ARDUINO_NANO_LIGHTS,VIN,+5V,,,"/>
+<approved hash="202,1,63.5,50.8,MIC,A/R,,,,"/>
+<approved hash="202,1,63.5,45.72,MIC,GAIN,,,,"/>
+<approved hash="104,1,63.5,43.18,MIC,VDD,MIC_VCC,,,"/>
+<approved hash="113,1,15.24,55.6472,ARDUINO_NANO_SOUND,,,,,"/>
+<approved hash="113,1,55.88,116.607,ARDUINO_NANO_LIGHTS,,,,,"/>
+<approved hash="113,1,-26.0773,148.753,LED_OUT,,,,,"/>
+<approved hash="113,1,75.565,44.6938,MIC,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
